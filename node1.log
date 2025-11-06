@@ -1,0 +1,8 @@
+2025/11/06 16:58:58 [Node 1] Starting server on port 5001
+2025/11/06 16:58:59 [Node 1] Connecting to peer 2 at localhost:5002
+2025/11/06 16:58:59 [Node 1] Connected to peer 2
+2025/11/06 16:59:02 [Node 1][Lamport: 1] Requesting access to critical section
+2025/11/06 16:59:02 [Node 1][Lamport: 1] Sending REQUEST to Node 2
+2025/11/06 16:59:02 [Node 1] Error sending request to Node 2: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5002: connect: connection refused"
+2025/11/06 16:59:14 [Node 1][Lamport: 2] Received REQUEST from Node 2 with timestamp 1
+2025/11/06 16:59:14 [Node 1][Lamport: 2] Our request has priority, deferring reply to Node 2

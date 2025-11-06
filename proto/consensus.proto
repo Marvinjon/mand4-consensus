@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package consensus;
+
+option go_package = "mand4-consensus/proto/consensus";
+
+// Service for Ricart-Agrawala mutual exclusion
+service MutualExclusion {
+  // Request permission to enter critical section
+  rpc Request(RequestMessage) returns (ReplyMessage);
+}
+
+// Request message sent when a node wants to enter critical section
+message RequestMessage {
+  int32 node_id = 1;        // ID of the requesting node
+  int64 timestamp = 2;       // Lamport timestamp
+}
+
+// Reply message sent to grant permission
+message ReplyMessage {
+  int32 node_id = 1;        // ID of the replying node
+  int64 timestamp = 2;       // Lamport timestamp
+  bool granted = 3;          // Permission granted
+}
+

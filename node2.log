@@ -1,0 +1,5 @@
+2025/11/06 16:59:08 [Node 2] Starting server on port 5002
+2025/11/06 16:59:09 [Node 2] Connecting to peer 1 at localhost:5001
+2025/11/06 16:59:09 [Node 2] Connected to peer 1
+2025/11/06 16:59:14 [Node 2][Lamport: 1] Requesting access to critical section
+2025/11/06 16:59:14 [Node 2][Lamport: 1] Sending REQUEST to Node 1
