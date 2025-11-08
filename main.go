@@ -38,7 +38,6 @@ func main() {
 
 	fmt.Printf("Node %d ready. Connected to %d peer(s)\n", *nodeID, len(peers))
 
-	// Wait 2 seconds for the nodes
 	time.Sleep(2 * time.Second)
 
 	if *nodeID == 1 {
